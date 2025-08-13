@@ -33,7 +33,11 @@ st.image("logo.png", width=100)
 # --- Title ---
 st.title("🖼 Bulk Image Format Converter")
 st.write(f"Welcome! You are visitor number **{visitor_count}**.")
-st.write("Upload multiple images, choose output format, and download them as a ZIP file.")
+st.markdown(
+    "<p style='color:green'><b>Note:</b> This tool does not track or store your images. "
+    "It is safe, risk-free, and free to use.</p>",
+    unsafe_allow_html=True
+)
 
 # --- File uploader ---
 uploaded_files = st.file_uploader(
